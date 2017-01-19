@@ -1,0 +1,327 @@
+/* Styles go here */
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 800px;
+}
+
+
+/* common style */
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.row-fullHeight {
+    height: 100%;
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+.col-fullHeight {
+    min-height: 100%;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+/* Header styles*/
+header {
+    padding: 0px 20px;
+    border-bottom: 2px solid #e8e8e8;
+    height: 50px;
+}
+
+.searchBar {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVDhP5ZI9C4MwEIb7//+BEDgICA6C4OQgBJy6dRIEB6EgCNkEJ4e3iT2oHzH9wHbpAwfyJvfkJDnhYH4kHDVKlSAigSAQoCiBKjVGXvaxFXZnxBQYkSlBICII+22K4jM63rbHSthCSdsskVX9Y6KxR5XJSSpVy6GbpbBKp6aw0BzM0ShCe1iKihMXC6EuQtMQwukzPFu3fFd4+C+/cimUNxy6WQkNnmdzL3NYPfDmLVuhZf2wZYz80qDkKX1St3CXAfVMqq4cz3hTaGEpmctxDPmB0M/fCYEbAwZYyVKYcroAAAAASUVORK5CYII=);
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+    border-radius: 45px;
+    padding: 5px 5px 5px 22px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    width: 200px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+    .searchBar:focus {
+        width: 300px;
+        border-color: gray;
+    }
+
+.searchHolder {
+    padding: 10px 0px;
+    float: left;
+}
+
+#uName {
+    padding: 15px 10px;
+    float: right;
+}
+
+#uProfilePic {
+    width: 48px;
+    float: right;
+}
+
+/* Slide Menu Style */
+.bdrLeft {
+    border-left: 2px solid #e8e8e8;
+}
+
+ul#userNameList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+    ul#userNameList li {
+        padding: 20px 10px 20px 20px;
+        border-bottom: 1px solid #e8e8e8;
+        cursor: pointer;
+        transition: 0.2s all ease;
+    }
+
+        ul#userNameList li.active {
+            background: rgba(232, 232, 232, 0.44);
+        }
+
+            ul#userNameList li.active:after {
+                content: '\25BA';
+                float: right;
+                color: #bfbfbf;
+            }
+
+/* Main content style */
+
+.btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    background: rgba(232, 232, 232, 0.44);
+}
+
+    .btn:hover {
+        background: rgba(232, 232, 232, 0.7);
+    }
+
+.btn-large {
+    border: 2px solid lightgray;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.innerContent {
+    width: 80%;
+    margin: 40px 60px;
+    min-width: 500px;
+}
+
+.userProfileTable {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .userProfileTable tr td:first-child {
+        width: 200px;
+        padding-right: 40px;
+    }
+
+    .userProfileTable tr td:last-child {
+        vertical-align: top;
+    }
+
+.userDescription {
+    padding: 10px 0px;
+}
+
+
+.userLikesTable {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid gray;
+}
+
+    .userLikesTable td {
+        font-weight: 500;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .userLikesTable thead tr {
+        background: rgba(128, 128, 128, 0.52);
+    }
+
+    .userLikesTable tbody tr:nth-child(even) {
+        background: whitesmoke;
+    }
+
+    .userLikesTable tbody tr:nth-child(odd) {
+    }
+
+.heartHolder {
+    padding: 10px 0px;
+}
+
+
+.heart.active:before, .heart.active:after {
+    background: black;
+}
+
+.heart:before, .heart:after {
+    background: lightgray;
+}
+
+
+/* animate content */
+
+.runFadeAnimation
+{
+    animation: flashDiv 0.5s; 
+    -webkit-animation: flashDiv 0.5s;
+}
+
+@-webkit-keyframes flashDiv {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes flashDiv {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* custom shapes */
+
+.heart {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    float: left;
+}
+
+    .heart:before,
+    .heart:after {
+        position: absolute;
+        content: "";
+        left: 24px;
+        top: 0;
+        width: 24px;
+        height: 40px;
+        -moz-border-radius: 50px 50px 0 0;
+        border-radius: 100px 100px 0 0;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-transform-origin: 0 100%;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -o-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    .heart:after {
+        left: 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transform-origin: 100% 100%;
+        -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        -o-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+    }
