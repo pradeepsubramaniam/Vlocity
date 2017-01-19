@@ -1,3 +1,6 @@
+NOTE : As its mentioned Javascript, CSS and HTML i didn't use any Framework like Angular JS, Bootstrap etc (Non Responsive).
+
+
 Your task is to implement the following UI with JavaScript, CSS and HTML.
 
 Mockup image: https://dl.dropboxusercontent.com/u/17930408/mockup.png
